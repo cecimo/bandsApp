@@ -1,6 +1,14 @@
+.brand-logo {
+	margin-left: 1em;
+}
+
 .button-list {
 	text-align: center;
 	margin: 2em;	
+}
+
+.searchForm {
+	margin: 2em;
 }
 
 footer {
@@ -11,3 +19,54 @@ footer {
 	width: 800px;
 	height: auto;
 }
+
+.card {
+	margin: 2em;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.material-icons {
+	color: #26a69a;
+}
+
+
+/*
+
+.card {
+  display: inline-block;
+  margin-left: 1em;
+  width: 200px;
+}
+
+.card .card-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.card .card-image img {
+  border-radius: 5px;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  margin-top: 1em;
+}
+
+.fullCardProduct {
+  margin: 2% 17%;
+  width: 65%;
+  text-align: center;
+}
+
+*/
+
+
