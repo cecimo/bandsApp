@@ -1,0 +1,33 @@
+<section class="container" ng-controller="GroupsViewController">
+	<div class="button-list">
+		<span>
+			<a name="group1" class="waves-effect waves-light btn" ng-model="decade" id="1" ng-click="decadeFilter = ''">All</a>
+		</span>
+		<span>
+			<a name="group1" class="waves-effect waves-light btn" ng-model="decade" id="2" value="1960" ng-click="decadeFilter = 1960">1960</a>
+		</span>
+		<span>
+			<a name="group1" class="waves-effect waves-light btn" ng-model="decade" id="3" value="1970" ng-click="decadeFilter = 1970">1970</a>
+		</span>
+		<span>
+			<a name="group1" class="waves-effect waves-light btn" ng-model="decade" id="4" value="1980" ng-click="decadeFilter = 1980">1980</a>
+		</span>
+		<span>
+			<a name="group1" class="waves-effect waves-light btn" ng-model="decade" id="5" value="1990" ng-click="decadeFilter = 1990">1990</a>
+		</span>
+		<form class="navbar-form navbar-left" role="search">
+			<div class="form-group">
+			<input type="text" ng-model="nameFilter" placeholder="Search">
+			</div>					
+		</form>	
+	</div>
+
+	<div class="row" id="cards-container">
+		<div class="col-md-4"> 
+			<div class="card small" ng-repeat="band in bands | filter: {name: nameFilter, decade: decadeFilter}">
+				<zc-singlecard></zc-singlecard>
+			</div>
+		</div>
+	</div>
+
+</section>
